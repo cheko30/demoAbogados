@@ -1,0 +1,166 @@
+@media only screen and (min-width: 700px) ,print
+{
+
+    .page{
+        max-width: 20.5cm;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .headerContract
+    {
+        margin-top: 30px;
+        height: 2cm;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        border: 1px solid black;
+    }
+
+    .headerContract img
+    {
+        height: 100%;
+        width: 7.6cm;
+    }
+
+    .headerText
+    {
+        font-size: 11px;
+        width: 400px;
+    }
+
+    .headerText h2
+    {
+        margin: 0px;
+        margin-top: 4px;
+        font-size: 20px;
+    }
+
+    .headerText h3
+    {
+        margin: 0px;
+        font-weight: 100px;
+        letter-spacing: 3px;
+    }
+
+    table
+    {
+        margin: 0px;
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    table tr, table td
+    {
+        border: 1px solid black;
+        border-spacing: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    th
+    {
+        color: white;
+        background-color: rgb(0,0,255);
+    }
+
+    .tableLabel
+    {
+        max-width: 3cm;
+        font-weight: bold;
+    }
+
+    .subTable
+    {
+        border: 0px;
+        padding: 0px;
+    }
+
+    .subTable__wraper
+    {
+        padding: 0px;
+    }
+
+
+    table p
+    {
+        margin: 0px;
+        border: none;
+        max-width: 100%;
+        word-break: break-all;
+        outline: none;
+    }
+
+    .tableHeader
+    {
+        text-align: center;
+    }
+
+    .datos
+    {
+        height:  4.2cm;
+    }
+
+    .datos .tableField
+    {
+        width: 6.4cm;
+    }
+
+    .informacion
+    {
+        height: 6cm;
+    }
+
+    .informacion .tableField
+    {
+        width: 15cm;
+    }
+
+    .middleData .tableField
+    {
+        width: 6.5cm;
+    }
+
+    .subTable__wraper
+    {
+        padding: 10px;
+    }
+
+    .subTable tr
+    {
+        border-top: none;
+        border-bottom: none;
+        border-left: none;
+    }
+
+    .informacion
+    {
+        text-align: center;
+    }
+
+    .informacion .tableLabel
+    {
+        height: 10px;
+    }
+
+    .buttons
+    {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+    }
+
+
+    .buttons button
+    {
+        color:  rgb(29, 28, 26);
+        background-color:  rgb(128, 110, 102);
+        border: none;
+        width: 140px;
+        outline: none;
+        height: 40px;
+        font-size: 18px;
+        margin-top: 30px;
+    }
+}

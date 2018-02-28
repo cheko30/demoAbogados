@@ -1,0 +1,243 @@
+@media only screen and (min-width: 700px) {
+
+    .page{
+        max-width: 1080px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .headerPage
+    {
+        background: url("../assets/ColorfullBanner.png");
+        width: 100%;
+        height: 130px;
+    }
+
+    
+    .headerPage__inicio
+    {
+        background: rgb(243,235,224);
+        width: 100%;
+        height: 130px;
+    }
+
+
+    .headerPage__title
+    {
+        padding-top: 25px;
+        padding-left: 25px;
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(143, 131, 115);
+    }
+
+    .headerPage__regMark
+    {
+        font-size: 15px;
+    }
+
+    .navigationBar
+    {
+        width: 100%;
+        height: 50px;
+        background-color:  rgb(65, 59, 53);
+    }
+
+    .footerPage
+    {
+        text-align: right;
+        color: rgb(111, 83, 56);
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .menu
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .menu li
+    {
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .dropdown
+    {
+        max-width: 135px;
+    }
+
+    .dropdown:first-of-type
+    {
+        max-width: 250px;
+        width: 250px;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    .dropdown-content a, .dropdown-content a:visited {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        background-color: rgb(243, 235, 224);
+    }
+
+    .menu a, .menu a:hover, .menu a:visited
+    {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .dropdown:hover .dropdown-content {
+    display: block;
+    }
+
+    .dropdownBtn
+    {
+        height: 100%;
+        color: rgb(243, 235, 224);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dropdownBtn a{
+        position: relative;
+        top: 7px;
+    }
+}
+
+
+@media only screen and (max-width: 700px) 
+{
+    .page{
+        min-width: 500px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .headerPage
+    {
+        background-color: rgb(243, 235, 224);
+        width: 100%;
+    }
+
+    .headerPage__title
+    {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        /* padding-left: 25px; */
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(143, 131, 115);
+        text-align: center;
+        margin: 0px;
+    }
+
+    .headerPage__regMark
+    {
+        font-size: 15px;
+    }
+
+    .navigationBar
+    {
+        width: 100%;
+        min-height: 50px;
+        background-color:  rgb(65, 59, 53);
+    }
+
+    .footerPage
+    {
+        text-align: center;
+        color: rgb(111, 83, 56);
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .menu
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .menu li
+    {
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        padding-top: 15px;
+        padding-bottom: 5px;
+        border: 1px solid black;
+    }
+
+    .dropdown
+    {
+        width: 100%;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    .dropdown-content a, .dropdown-content a:visited {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        background-color: rgb(243, 235, 224);
+    }
+
+    .menu a, .menu a:hover, .menu a:visited
+    {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .dropdown:hover .dropdown-content {
+    display: block;
+    }
+
+    .dropdownBtn
+    {
+        height: 100%;
+        color: rgb(243, 235, 224);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dropdownBtn a{
+        position: relative;
+        top: 7px;
+    }
+}

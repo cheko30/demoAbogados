@@ -1,0 +1,159 @@
+@media only screen and (min-width: 700px) {
+    .content
+    {
+        display: flex;
+        flex-direction: row;
+        font-size: 15px;
+        font-family: 'Times New Roman', Times, serif;
+        color:  rgb(111, 83, 56);
+        min-height: 650px;
+    }   
+
+    .content .left__logo
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        margin-top: 20px;
+    }   
+
+    .content__left
+    {
+        width: 250px;
+        min-width: 250px;
+    }
+
+    .content__right{
+        width: 100%;
+    }
+
+    .content__right h1{
+        font-size: 60px;
+        letter-spacing: 5px;
+        font-weight: 100;
+        margin-top: 80px;
+        margin-left: 80px;
+    }
+
+    .content__right form
+    {
+        margin-left: 250px;
+        font-size: 18px;
+        font-family: arial;
+        letter-spacing: 2px;
+        width: 400px;
+    }
+
+    .content__right form input[type="text"]
+    {
+        background-color: rgb(243, 235, 224);
+        border: none;
+        min-width: 400px;
+        height: 30px;
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+
+    .buttonsLogin
+    {
+        width: 100%;
+        display: flex;
+        flex-flow: row;
+        justify-content: flex-end;
+
+    }
+
+    .content__right form input[type="submit"]
+    {
+        color:  rgb(29, 28, 26);
+        background-color:  rgb(128, 110, 102);
+        border: none;
+        width: 140px;
+        outline: none;
+        height: 40px;
+        font-size: 18px;
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    .content
+    {
+        display: flex;
+        flex-direction: row;
+        font-size: 15px;
+        font-family: 'Times New Roman', Times, serif;
+        color:  rgb(111, 83, 56);
+    }   
+    .content .left__logo
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        margin-top: 20px;
+    }   
+
+    .content__left
+    {
+        display: none;
+    }
+
+    .content__right{
+        width: 100%;
+    }
+
+    .content__right h1{
+        font-size: 60px;
+        letter-spacing: 5px;
+        font-weight: 100;
+        /* margin-top: 80px; */
+        /* margin-left: 80px; */
+        text-align: center;
+    }
+
+    .content__right form
+    {
+    /* margin-left: 250px; */
+    /* font-size: 18px; */
+    /* font-family: arial; */
+    letter-spacing: 2px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+
+    }
+
+    .content__right form input[type="text"]
+    {
+        background-color: rgb(243, 235, 224);
+        border: none;
+        min-width: 400px;
+        height: 30px;
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+
+    .buttonsLogin
+    {
+        width: 100%;
+        display: flex;
+        flex-flow: row;
+        justify-content: flex-end;
+
+    }
+
+    .content__right form input[type="submit"]
+    {
+        color:  rgb(29, 28, 26);
+        background-color:  rgb(128, 110, 102);
+        border: none;
+        width: 100%;
+        outline: none;
+        height: 40px;
+        font-size: 18px;
+    }
+
+
+}

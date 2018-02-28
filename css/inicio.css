@@ -1,0 +1,118 @@
+@media only screen and (min-width: 700px) {
+    .content
+    {
+        min-width: 430px;
+        min-height: 650px;
+    }
+
+    .content__saludo
+    {
+        max-width: 611px;
+        text-align: center;
+        display: block;
+        margin: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 60px;
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+        color:  rgb(111, 83, 56);
+    }
+
+    .link-home
+    {
+        width: 430px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+
+    .link-home__image
+    {
+        width: 430px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .link-home__text
+    {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        color:  rgb(111, 83, 56);
+    }
+
+    .link-home__text a, .link-home__textmenu a:hover, .link-home__text a:visited
+    {
+        color: inherit;
+        text-decoration: none;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 700px) {
+    .content
+    {
+        min-width: 430px;
+        min-height: 650px;
+    }
+
+    .content__saludo
+    {
+        max-width: 611px;
+        text-align: center;
+        display: block;
+        margin: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 60px;
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+        color:  rgb(111, 83, 56);
+    }
+
+    .link-home
+    {
+        width: 430px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+
+    .link-home__image
+    {
+        width: 430px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .link-home__text
+    {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        color:  rgb(111, 83, 56);
+    }
+
+    .link-home__text a, .link-home__textmenu a:hover, .link-home__text a:visited
+    {
+        color: inherit;
+        text-decoration: none;
+    }
+
+
+}

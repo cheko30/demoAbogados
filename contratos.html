@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Legal tech</title>
+        <link rel="stylesheet" href="./css/general.css"/>
+        <link rel="stylesheet" href="./css/contratos.css"/>
+        <script src="./js/databaseManager.js"></script>
+    </head>
+    <body>
+        <div class="page">
+            <header class="headerPage">
+                    <h2 class="headerPage__title">Legal Help <sup class="headerPage__regMark">&reg</sup></h2>
+            </header>
+            <nav class="navigationBar">
+            <ul class="menu">
+                    <li class="dropdown">
+                            <a href="inicio.html"><div class="dropdownBtn">Inicio</div></a>
+                    </li>
+                    <li class="dropdown">                        
+                        <a  href="contratos.html"><div class="dropdownBtn">M&oacute;dulo de Contratos</div></a>
+                    </li>
+                    <li class="dropdown">                        
+                        <a><div class="dropdownBtn">M&oacute;dulo de PI</div></a>
+                    </li>
+                    <li class="dropdown">                        
+                        <a><div class="dropdownBtn">M&oacute;dulo de Gobierno Corporativo</div></a>
+                    </li>
+                    <li class="dropdown">                        
+                        <a><div class="dropdownBtn">Mesa de ayuda</div></a>
+                        <!--<div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div> -->
+                    </li>
+                </ul>
+            </nav>
+            <div class="content">
+                    <div class="content__left"> 
+                            <img id="logoImage" class="left__logo"src="./assets/elementia_background.png">
+                            <p class="logInLink" ><a href="login.html">Log In</a></p>
+                    </div>
+                    <div class="content__right">
+                        <table class="table-pendintes">
+                            <thead>
+                                <tr>
+                                    <th id="headerTable" class="table__header" colspan="5">
+                                    Contratos
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>#</th>
+                                    <th  colspan="2">
+                                        Identificador del contrato
+                                    </th>
+                                    <th colspan="2">
+                                        Accion
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody id="infoTable">
+                                <tr>
+                                    <td class="number">0</td>
+                                    <td colspan="2">Ejemplo</td>
+                                    <td class="edit actionButton"><button onclick="editContrato()">Editar</button></td>
+                                    <td class="delete actionButton"><button onclick="deleteContrato()">Borrar</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table-add">
+                            <tr id="lastRow">
+                                    <td colspan="3"><input id="name" type="text"></td>
+                                    <td class="add actionButton" colspan="2"><button onclick="addContrato()">Agregar</button></td>
+                            </tr>
+                        </table>
+                        <footer class="footerPage">
+                            <p>Powered by Fractales and Upton LegalTech<sup>&reg</sup></p>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

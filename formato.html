@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Legal tech</title>
+        <link rel="stylesheet"  href="./css/formato.css">
+        <link rel="stylesheet"  href="./css/general.css">
+        <script src="./js/databaseManager.js"></script>
+    </head>
+    <body>
+        <div class="page">
+            <header class="headerPage">
+                <h2 class="headerPage__title">Legal Help <sup class="headerPage__regMark">&reg</sup></h2>
+         </header>
+            <nav class="navigationBar">
+            <ul class="menu">
+                    <li class="dropdown">
+                            <a href="inicio.html"><div class="dropdownBtn">Inicio</div></a>
+                    </li>
+                    <li class="dropdown">                        
+                        <a><div class="dropdownBtn">M&oacute;dulo de Contratos</div></a>
+                    </li>
+                    <li class="dropdown">                        
+                        <a><div class="dropdownBtn">M&oacute;dulo de PI</div></a>
+                    </li>
+                    <li class="dropdown">                        
+                        <a><div class="dropdownBtn">M&oacute;dulo de Gobierno Corporativo</div></a>
+                    </li>
+                    <li class="dropdown">                        
+                        <a><div class="dropdownBtn">Mesa de ayuda</div></a>
+                        <!--<div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div> -->
+                    </li>
+                </ul>
+            </nav>
+            <div id="contratoPage">
+            <header class="headerContract">
+                <img src="assets/elementia_banner.png">
+                <div class="headerText">
+                     <h3>No. De Control Interno</h3> 
+                     <h2>Solicitud de Convenios, Contratos y Documentos Legales</h2>
+                </div>
+         </header>
+            <table class="datos">
+                <thead>
+                    <tr>
+                        <th class="tableHeader" colspan="4">Datos del Solicitante</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tableLabel">Nombre: </td>
+                        <td class="tableField"><p contenteditable="true"></p></td>
+                        <td class="tableLabel">Pais en donde se ubica: </td>
+                        <td class="tableField"><p contenteditable="true"></p></td>
+                    </tr>
+                    <tr>
+                        <td class="tableLabel">Cargo: </td>
+                        <td class="tableField"><p contenteditable="true"></p></td>
+                        <td class="tableLabel">&Aacute;rea a la que pertenece: </td>
+                        <td class="tableField"><p contenteditable="true"></p></td>
+                    </tr>
+                    <tr>
+                        <td class="tableLabel">Planta/Oficina: </td>
+                        <td class="tableField"><p contenteditable="true"></p></td>
+                        <td class="tableLabel">Direcci&oacute;n a la que pertenece: </td>
+                        <td class="tableField"><p contenteditable="true"></p></td>
+                    </tr>
+                    <tr>
+                        <td class="tableLabel">Extensión: </td>
+                        <td class="tableField"><p contenteditable="true"></p></td>
+                        <td class="tableLabel">Jefe Inmediato: </td>
+                        <td class="tableField"><p contenteditable="true"></p></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="informacion">
+                <thead>
+                    <tr>
+                        <th class="tableHeader" colspan="2">Informaci&oacute;n para elaborar o revisar el Contrato, Convenio o Documento Legal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tableLabel">Empresa del grupo que firma el documento: </td>
+                        <td class="tableField"><p contenteditable="true"></p></td>
+                    </tr>
+                    <tr>
+                        <td class="tableLabel">Pa&iacute;s de las Contrapartes: </td>
+                        <td class="tableField"><p contenteditable="true"></p></td>
+                    </tr>
+                    <tr>
+                        <td class="tableLabel">Nombre de la contraparte:<br> (Cliente/Proveedor) </td>
+                        <td class="tableField"><p contenteditable="true"></p></td>
+                    </tr>
+                    <tr>
+                        <td class="tableLabel">Alcance del contrato/servicio:<br> (Lo mas detallado posible) </td>
+                        <td class="tableField"><p contenteditable="true"></p></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="middleData">
+                <tbody>
+                    <tr>
+                        <td class="tableLabel">Monto: </td>
+                        <td class="tableField"><p contenteditable="true"></p></td>
+                        <td class="tableLabel">Forma de Pago:<br>(Anticipos, fechas, %, mensual, anual) </td>
+                        <td class="tableField"><p contenteditable="true"></p></td>
+                    </tr>
+                    <tr>
+                        <td class="tableLabel">Lugar de ejecuci&oacute;n o entrega: </td>
+                        <td class="tableField"><p contenteditable="true"></p></td>
+                        <td class="tableLabel">Divisa:</td>
+                        <td class="tableField"><p contenteditable="true"></p></td>
+                    </tr>
+                    <tr>
+                        <td class="tableLabel">Forma de entrega o prestaci&oacute;n: <br> (mensual, anual, una sola vez, etc) </td>
+                        <td class="tableField"><p contenteditable="true"></p></td>
+                        <td class="tableLabel" colspan="2">Marcar los documentos que se envian a la Gerencia de Contratos: <br> (Via email)</td>
+                    </tr>
+                    <tr>
+                        <td class="tableLabel">Incoterm: </td>
+                        <td class="tableField"><p contenteditable="true"></p></td>
+                        <td colspan="2" rowspan="2" class="subTable__wraper">
+                            <table class="subTable">
+                                <tr>
+                                    <td class="tableLabel">Cotizaci&oacute;n: </td>
+                                    <td class="tableField"><p contenteditable="true"></p></td>
+                                    <td class="tableLabel">Documentaci&oacute;n legal:</td>
+                                    <td class="tableField"><p contenteditable="true"></p></td>
+                                </tr>
+                                <tr>
+                                    <td class="tableLabel">Cat&aacute;logo de Conceptos: </td>
+                                    <td class="tableField"><p contenteditable="true"></p></td>
+                                    <td class="tableField" colspan="2" rowspan="3"><p contenteditable="true"></p></td>
+                                </tr>
+                                <tr>
+                                    <td class="tableLabel">Descripci&oacute;n de Servicios: </td>
+                                    <td class="tableField"><p contenteditable="true"></p></td>
+                                </tr>
+                                <tr>
+                                    <td class="tableLabel">Planos: </td>
+                                    <td class="tableField"><p contenteditable="true"></p></td>
+                                </tr>
+                                <tr>
+                                    <td class="tableLabel">Otros: </td>
+                                    <td class="tableField"><p contenteditable="true"></p></td>
+                                    <td class="tableLabel" colspan="2">Favor de enlistar los "Otros" en comentarios adicionales:</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tableLabel">Comentarios adicionales: </td>
+                        <td class="tableField"><p contenteditable="true"></p></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="informacion">
+                    <thead>
+                        <tr>
+                            <th class="tableHeader" colspan="3">Autorizaciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="tableLabel">Solicitante</td>
+                            <td class="tableLabel">Jefe Inmediato</td>
+                            <td class="tableLabel">Direcci&oacute;n de &Aacute;rea</td>
+                        </tr>
+                        <tr>
+                                <td class="tableLabel">Nombre</td>
+                                <td class="tableLabel">Nombre</td>
+                                <td class="tableLabel">Nombre</td>
+                        </tr>
+                        <tr>
+                                <td class="tableField"><p contenteditable="true"></p></td>
+                                <td class="tableField"><p contenteditable="true"></p></td>
+                                <td class="tableField"><p contenteditable="true"></p></td>
+                        </tr>
+                        <tr>
+                                <td class="tableLabel">Firma</td>
+                                <td class="tableLabel">Firma</td>
+                                <td class="tableLabel">Firma</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="buttons">
+                    <button onclick="cancelaContratos()">Cancelar</button>
+                    <button onclick="goToContratos()">Guardar</button>
+                </div>
+            </div>
+            <footer class="footerPage">
+                    <p>Powered by Fractales and Upton LegalTech<sup>&reg</sup></p>
+            </footer>
+        </div>
+    </body>
+</html>

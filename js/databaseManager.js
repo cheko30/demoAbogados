@@ -287,6 +287,5 @@ function deleteContrato(id)
     var element =document.getElementById("row_"+key);
     element.parentElement.removeChild(element);
     databaseManager.Contratos.getById(key,function(element){element.delete();window.location = "contratos.html"});
-    
 }
 

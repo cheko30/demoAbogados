@@ -1,4 +1,4 @@
-//Script de prueba
+//Script de prueba para commit
 var contratos = [];
 var contador = 0;
 window.addEventListener("load",function()

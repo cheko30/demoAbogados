@@ -49,13 +49,22 @@ function addEntries(contratos)
 {
     for(var i=0;i<contratos.length;i++)
     {
-        addEntrie(contratos[i]);
+        if(contratos[i].name != ""  && contratos[i].name != undefined && contratos[i].name != null)
+        {
+            addEntrie(contratos[i],i+1);
+        }
+        else
+        {
+            var contrato = new databaseManager.Contratos(contratos[i].id,contratos[i].name,contratos[i].data);
+            contrato.delete();
+        }
     }
 }
 
-function addEntrie(contrato)
+function addEntrie(contrato,i)
 {
-    var htmltable = '<td class="number">'+contrato.id+'</td>'+
+    var num = i||contrato.id;
+    var htmltable = '<td class="number">'+num+'</td>'+
     '<td colspan="2">'+contrato.name +'</td>'+
     '<td class="edit actionButton"><button onclick="editContrato('+contrato.id+')">Editar</button></td>'+
     '<td class="delete actionButton"><button onclick="deleteContrato('+contrato.id+')">Borrar</button></td>';
@@ -219,15 +228,7 @@ var databaseManager = (function()
 
 function addContrato()
 {
-    var element = document.querySelector("#lastRow input");
-    var name = element.value;
-    if(name == "" || name==null)
-    {
-        alert("Ingrese un nombre porfavor");
-        return;
-    }
     var contrato = new databaseManager.Contratos();
-    contrato.name = name;
     contrato.create(function(data){window.location = "formato.html?id="+data.id;});
 
     /*var joiner = window.location.search != ""? "&":"?";
@@ -264,12 +265,19 @@ function goToContratos()
             databaseManager.Contratos.getById(key,function(element){
                 var page = document.getElementById("contratoPage");
                 element.data = page.innerHTML;
-                element.update(function()
+                element.name = document.getElementById("nameEntry").innerText;
+                if(element.name == undefined || element.name == null || element.name == "")
                 {
-                    window.location = "contratos.html";
-                })
+                    alert("Ingrese un nombre de contrato");
+                }    
+                else
+                {
+                    element.update(function()
+                    {
+                        window.location = "contratos.html";
+                    });
+                }           
             });
-            window.location = "contratos.html" + window.location.search;
         }
         else
         {
@@ -287,6 +295,6 @@ function deleteContrato(id)
     var key = Number(id);
     var element =document.getElementById("row_"+key);
     element.parentElement.removeChild(element);
-    databaseManager.Contratos.getById(key,function(element){element.delete();window.location = "contratos.html"});    
+    databaseManager.Contratos.getById(key,function(element){element.delete()});    
 }
 

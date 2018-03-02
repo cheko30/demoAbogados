@@ -149,6 +149,11 @@
         border-top: none;
     }
 
+    #agregarEmpty
+    {
+        width: 400px;
+    }
+
 }
 
 

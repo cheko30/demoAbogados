@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Legal tech</title>
+        <link rel="stylesheet" href="./css/general.css"/>
+        <link rel="stylesheet" href="./css/litigios.css"/>
+        <script src="./js/effectsLitigios.js"></script>
+    </head>
+    <body>
+        <div class="page">
+            <header class="headerPage">
+                    <h2 class="headerPage__title">Legal Help <sup class="headerPage__regMark">&reg</sup></h2>
+            </header>
+            <nav class="navigationBar">
+            <ul class="menu">
+                    <li class="dropdown">
+                            <a href="inicio.html"><div class="dropdownBtn">Inicio</div></a>
+                    </li>
+                    <li class="dropdown">                        
+                        <a  href="contratos.html"><div class="dropdownBtn">M&oacute;dulo de Contratos</div></a>
+                    </li>
+                    <li class="dropdown">                        
+                        <a><div class="dropdownBtn">M&oacute;dulo de PI</div></a>
+                    </li>
+                    <li class="dropdown">                        
+                        <a><div class="dropdownBtn">M&oacute;dulo de Gobierno Corporativo</div></a>
+                    </li>
+                    <li class="dropdown">
+                            <a href="litigios.html"><div class="dropdownBtn">Litigios</div></a>
+                    </li>
+                    <li class="dropdown">                        
+                        <a><div class="dropdownBtn">Mesa de ayuda</div></a>
+                        <!--<div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div> -->
+                    </li>
+                </ul>
+            </nav>
+            <div class="content">
+                <div class="form_gauche">
+                    <table>
+                        <h3>Asuntos de Litigio</h3>
+                        <tr>
+                            <td><label>Empresa:</label></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Divisi&oacute;n:</label></td>
+                            <td><select></select></td>
+                        </tr>
+                        <tr>
+                            <td><label>Regi&oacute;n:</label></td>
+                            <td><select></select></td>
+                        </tr>
+                        <tr>
+                            <td><label>Actores:</label></td>
+                            <td><input id="actores" type="text"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="addToList">
+                                <ul id="actoresList" class="list"></ul>
+                                <div class="buttons">
+                                    <button onclick="addActor()">(+)</button>
+                                    <button onclick="removeActor()">(-)</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Objetivo:</td>
+                            <td><textarea></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><label>Viabilidad:</label></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Porcentaje:</label></td>
+                            <td><input type="text">%</td>
+                        </tr>
+                        <tr>
+                            <td><label>¿A que despacho se va a canalizar?:</label></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><label>¿Ya fue rmeitido al despacho designado?:</label></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Fecha de remision al despacho:</label></td>
+                            <td><input type="date"></td>
+                        </tr>
+                    </table>     
+                </div>
+                <div class="form_droite">
+                    <table>
+                            <tr>
+                                <td><label>Ambito:</label></td>
+                                <td><select></select></td>
+                            </tr>
+                            <tr>
+                                <td><label>Tipo litigio:</label></td>
+                                <td><select></select></td>
+                            </tr>
+                            <tr>
+                                <td><label>Tipo parte:</label></td>
+                                <td><select></select></td>
+                            </tr>
+                            <tr>
+                                <td><label>Estado:</label></td>
+                                <td><select></select></td>
+                            </tr>
+                            <tr>
+                                <td>Asunto:</td>
+                                <td><textarea></textarea></td>
+                            </tr>
+                        </table>   
+                </div>
+            </div>
+            <footer class="footerPage">
+                    <p>Powered by Fractales and Upton LegalTech<sup>&reg</sup></p>
+            </footer>
+        </div>
+    </body>
+</html>
